@@ -1,0 +1,113 @@
+.logo {
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+.main-header{
+    background-color: #87423c, 36px;
+}
+.navigation{
+    background-color: #4d1d18;
+    text-align: right;
+}
+.navigation a{
+    color: gold;
+    text-decoration: none;
+    padding: 12px;
+    display:inline-block;
+}
+.navigation a:hover {
+    color: #555;
+    background-color: blanchedalmond;
+}
+body{
+    background-color: rgb(161, 255, 161);
+    font-family:'Merriweather', serif;
+    margin: 0;
+}
+.banner{
+    aspect-ratio: 16/5;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.banner video{
+    font-size: 250%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:indianred;
+    text-shadow:gold 3px 3px 3px;
+}
+.social a {
+    text-decoration: none;
+    color: orangered;
+    font-size: 150%;
+    margin: 0 20px ;
+}
+.social {
+    text-align: center;
+}
+/* pseudo selector / class */
+.social a:hover {
+    color: yellow;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    /* margin-top: 30px; */
+    margin: 30px;
+}
+.card img {
+    max-width: 100%;
+}
+.card-image{
+    aspect-ratio: 4/2.5;
+    overflow: hidden;
+}
+/* selector for element that has both banner and contact classes */
+.banner.contact{
+    background-image: url("graphics/juniperphoton-E0bj4Q53_Dw-unsplash.jpg")
+}
+.banner.about{
+    background-image: url("graphics/ismael-abelleira-MZ00oma1sn0-unsplash.jpg")
+}
+.banner.news{
+    background-image: url("graphics/fabrizio-chiagano-7sf1RGqn2DA-unsplash.jpg");
+}
+.content.contact{
+    grid-template-columns: 1fr 2fr 1fr;
+}
+#contact-form{
+    grid-column-start: 2;
+    background-color:rgb(255, 223, 82);
+    padding: 30px 100px;
+    border-radius: 10px;
+}
+/* form styles */
+#contact-form > label{
+    display: block;
+    font-weight: bold;
+}
+#contact-form > input, 
+#contact-form > select,
+#contact-form > textarea 
+{
+    min-width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border:rgb(252, 164, 0) solid 1px;
+}
+#contact-form > input:focus, 
+#contact-form > select:focus,
+#contact-form > textarea:focus
+{
+    outline:rgb(255, 0, 0) solid 1px;
+}
+.checkbox, .radio {
+    padding: 15px 0;
+}

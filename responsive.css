@@ -1,0 +1,30 @@
+@media screen and ( max-width: 400px ) {
+    .logo {
+        width: 60px;
+        margin: 5px auto;
+        display:block;
+    }
+    .navigation {
+        text-align: center;
+    }
+    .banner {
+        aspect-ratio: 1/1;
+
+    }
+    .banner h1 {
+        font-size: 150%;
+    }
+    .content, .content.contact {
+        grid-template-columns: 1fr;
+        margin: 30px 10px;
+    }
+    .card h3 {
+        text-align: center;
+    }
+    #contact-form {
+        grid-column-start: 1;
+        padding :10px 10px;
+    }
+
+}  
+

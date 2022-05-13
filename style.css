@@ -1,5 +1,5 @@
 .logo {
-    width: 300px;
+    width: 400px;
     margin: auto;
     display: block;
 }
@@ -21,26 +21,29 @@
     background-color: blanchedalmond;
 }
 body{
-    background-color: rgb(161, 255, 161);
-    font-family:'Merriweather', serif;
+    background-color: burlywood;
+    font-family:'Helvetica', 'Calibri', sans-serif;
     margin: 0;
 }
-.banner{
+.banner {
+    background-image: url(graphics/khachik-simonian-nXOB-wh4Oyc-unsplash.jpg);
     aspect-ratio: 16/5;
     background-size: cover;
     background-position: center;
     display: grid;
     place-items: center;
 }
-.banner video{
-    font-size: 250%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:indianred;
-    text-shadow:gold 3px 3px 3px;
+.banner h1 {
+    font-family: 'Helvetica','Calibri', sans-serif;
+    font-size: 200%;
+    color:#fee843, 24px;
+}
+.videocon{
+    text-align: center;
 }
 .social a {
     text-decoration: none;
-    color: orangered;
+    color: rgb(20, 149, 255);
     font-size: 150%;
     margin: 0 20px ;
 }
@@ -54,10 +57,11 @@ body{
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     /* margin-top: 30px; */
     margin: 30px;
+    line-height: 150%;
 }
 .card img {
     max-width: 100%;
@@ -71,7 +75,7 @@ body{
     background-image: url("graphics/juniperphoton-E0bj4Q53_Dw-unsplash.jpg")
 }
 .banner.about{
-    background-image: url("graphics/ismael-abelleira-MZ00oma1sn0-unsplash.jpg")
+    background-image: url("graphics/ralph-ravi-kayden-FqqiAvJejto-unsplash.jpg")
 }
 .banner.news{
     background-image: url("graphics/fabrizio-chiagano-7sf1RGqn2DA-unsplash.jpg");

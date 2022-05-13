@@ -35,12 +35,20 @@ body{
 }
 .banner h1 {
     font-family: 'Helvetica','Calibri', sans-serif;
+    font-size: 300%;
+    color:tomato;
+    text-shadow: 3px 3px mistyrose;
+}
+.videohead h1 {
+    font-family: 'Helvetica','Calibri', sans-serif;
     font-size: 200%;
-    color:#fee843, 24px;
+    color:darksalmon;
+    text-shadow: darkred 2px 2px;
 }
 .videocon{
     text-align: center;
 }
+
 .social a {
     text-decoration: none;
     color: rgb(20, 149, 255);
@@ -63,6 +71,10 @@ body{
     margin: 30px;
     line-height: 150%;
 }
+.content h3 {
+    color:crimson;
+    font-size:150%;
+}
 .card img {
     max-width: 100%;
 }
@@ -70,6 +82,7 @@ body{
     aspect-ratio: 4/2.5;
     overflow: hidden;
 }
+
 /* selector for element that has both banner and contact classes */
 .banner.contact{
     background-image: url("graphics/juniperphoton-E0bj4Q53_Dw-unsplash.jpg")

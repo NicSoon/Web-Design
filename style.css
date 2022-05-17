@@ -21,12 +21,15 @@
     background-color: blanchedalmond;
 }
 body{
-    background-color: burlywood;
-    font-family:'Helvetica', 'Calibri', sans-serif;
+    background-color:moccasin;
+    font-family:'Helvetica', 'Calibri', monospace;
     margin: 0;
+    font-size: 18px;
+    font-weight: 400%
+
 }
 .banner {
-    background-image: url(graphics/khachik-simonian-nXOB-wh4Oyc-unsplash.jpg);
+    background-image: url("graphics/khachik-simonian-nXOB-wh4Oyc-unsplash.jpg");
     aspect-ratio: 16/5;
     background-size: cover;
     background-position: center;
@@ -38,15 +41,20 @@ body{
     font-size: 300%;
     color:tomato;
     text-shadow: 3px 3px mistyrose;
+    font-weight: bold;
 }
 .videohead h1 {
-    font-family: 'Helvetica','Calibri', sans-serif;
+    font-family: 'Helvetica','Calibri', monospace;
     font-size: 200%;
-    color:darksalmon;
-    text-shadow: darkred 2px 2px;
+    color:deepskyblue; 
 }
 .videocon{
-    text-align: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:30px;
+    margin:30px;
+    line-height:150%;
+    padding:50px;
 }
 
 .social a {
@@ -75,6 +83,18 @@ body{
     color:crimson;
     font-size:150%;
 }
+.content.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin: 30px;
+    line-height: 150%;
+}
+/*.content h1 {
+    color:darkslategray;
+    text-shadow:lightpink;
+    font-size:300%;
+}*/
 .card img {
     max-width: 100%;
 }
@@ -82,10 +102,24 @@ body{
     aspect-ratio: 4/2.5;
     overflow: hidden;
 }
+.card h1 {
+    font-family: 'Helvetica','Calibri', sans-serif;
+    font-size: 200%;
+    color:darksalmon;
+    text-shadow: darkred 2px 2px; 
+}
+.card h5 {
+
+}
+.footer h4 {
+    text-align:center;
+    font-size:120%;
+    color:steelblue;
+}
 
 /* selector for element that has both banner and contact classes */
 .banner.contact{
-    background-image: url("graphics/juniperphoton-E0bj4Q53_Dw-unsplash.jpg")
+    background-image: url("graphics/mona-jain--7e7KERdgW0-unsplash.jpg")
 }
 .banner.about{
     background-image: url("graphics/ralph-ravi-kayden-FqqiAvJejto-unsplash.jpg")
@@ -96,6 +130,7 @@ body{
 .content.contact{
     grid-template-columns: 1fr 2fr 1fr;
 }
+
 #contact-form{
     grid-column-start: 2;
     background-color:rgb(255, 223, 82);

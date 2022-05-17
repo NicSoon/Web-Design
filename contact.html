@@ -16,15 +16,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <!-- body is document content -->
-
+<style>
+</style>
 <body>
     <header class="main-header">
-        <img class="logo" src="graphics/sorrento_by_the_sea_logo.jpg">
+        <a href="index.html"><img class="logo" src="graphics/sorrento_by_the_sea_logo.jpg"></a>
         <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="booking.html">Booking</a>
-            <a href="contact.html">Contact</a>
+            <a href="pricing.html">Pricing</a>
         </nav>
     </header>
     <div class="banner contact">
@@ -47,27 +48,33 @@
                 <label for="origin1">I am in Australia</label>
                 <input type="radio" name="origin" id="origin2" value="int">
                 <label for="origin2">I am outside Australia</label>
-                <input type="radio" name="origin" id="origin3" value="ant">
-                <label for="origin3">I am in Antarctica</label>
             </div>
             <!-- select -->
-            <label for="useroptions">Options</label>
+            <!-- <label for="useroptions">Contact Us</label>
             <select placeholder="select one" id="useroptions">
-                <option value="1">Option 1</option>
-                <option value="2" selected>Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">sorrentobythesea@gmail.com</option>
+                <option value="2" selected>+61345678912</option>
+                <option value="3">sorrentobythesea@hotmail.com</option> -->
             </select>
             <label for="message">Message</label>
             <textarea name="message" id="message" rows="5" cols="30" placeholder="your message to us"></textarea>
-            <button type="reset">Reset</button>
-            <button type="submit">Submit</button>
-            <button type="book_now">Book Now</button>
-            <script>
-                $('#book_now').on('click', function() { window.location = 'http://www.google.com'; });
-                </script>
+            <!-- <button type="reset">Reset</button>
+            <button type="submit">Submit</button> -->
+            <!-- <button onclick="window.location.href='booking.html';">Book Now</button> -->
+            <!-- <a class="btn btn_primary" href="booking.html">Book Now</a> -->
+            <input type="button" onclick="window.location.href='booking.html';" value="Book Now"/>
         </form>
     </main>
     <footer class="footer">
+        <h4><strong>Contact Us</strong>
+            <br>
+            <br>
+            +6123456789
+            <br>
+            sorrentobythesea@gmail.com
+            <br>
+            sorrentobythesea@hotmail.com<h4>
+            <br>
         <nav class="social">
             <a href="https://wwww.facebook.com/TAFENSW/">
                 <i class="fa-brands fa-facebook"></i>

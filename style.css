@@ -3,31 +3,38 @@
     margin: auto;
     display: block;
 }
-.main-header{
+
+.main-header {
     background-color: #87423c, 36px;
 }
-.navigation{
+
+.navigation {
     background-color: #4d1d18;
     text-align: right;
 }
-.navigation a{
+
+.navigation a {
     color: gold;
     text-decoration: none;
     padding: 12px;
-    display:inline-block;
+    display: inline-block;
 }
+
 .navigation a:hover {
     color: #555;
     background-color: blanchedalmond;
 }
-body{
-    background-color:moccasin;
-    font-family:'Helvetica', 'Calibri', monospace;
+
+body {
+    background-color: moccasin;
+    font-family: 'Helvetica', 'Calibri', monospace;
     margin: 0;
     font-size: 18px;
-    font-weight: 400%
+    font-weight: 400%;
+
 
 }
+
 .banner {
     background-image: url("graphics/khachik-simonian-nXOB-wh4Oyc-unsplash.jpg");
     aspect-ratio: 16/5;
@@ -36,36 +43,161 @@ body{
     display: grid;
     place-items: center;
 }
+
 .banner h1 {
-    font-family: 'Helvetica','Calibri', sans-serif;
+    font-family: 'Helvetica', 'Calibri', sans-serif;
     font-size: 300%;
-    color:tomato;
+    color: tomato;
     text-shadow: 3px 3px mistyrose;
     font-weight: bold;
 }
-.videohead h1 {
-    font-family: 'Helvetica','Calibri', monospace;
-    font-size: 200%;
-    color:deepskyblue; 
+
+/* section .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background:deepskyblue;
 }
-.videocon{
-    display:grid;
+
+section .card .image img {
+    height:100px;
+    width:100px;
+    object-fit:cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.card {
+    background:#fff;
+    border-radius: 20px;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    background:deepskyblue;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+
+} */
+
+.home-testimonial {
+    background-color:midnightblue;
+    height: 380px
+}
+
+.home-testimonial-bottom {
+    background-color:lightgoldenrodyellow;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    height: 130px;
+    top: 190px
+}
+
+.home-testimonial h3 {
+    color:khaki;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase
+}
+
+.home-testimonial h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700
+}
+
+.testimonial-inner {
+    position: relative;
+    top: -174px
+}
+
+.testimonial-pos {
+    position: relative;
+    top: 24px
+}
+
+.testimonial-inner .tour-desc {
+    border-radius: 5px;
+    padding: 40px
+}
+
+.color-grey-3 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    color: #3069af
+}
+
+.testimonial-inner img.tm-people {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: none
+}
+
+.link-name {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    color: #6c83a2
+}
+
+.link-position {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 12px;
+    color: #6c83a2
+}
+
+.mapcontent {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:30px;
-    margin:30px;
-    line-height:150%;
-    padding:50px;
+    grid-gap: 30px;
+    margin: 30px;
+    line-height: 150%;
+    padding: 50px;
+}
+
+.videohead h1 {
+    font-family: 'Helvetica', 'Calibri', monospace;
+    font-size: 200%;
+    color: deepskyblue;
+}
+
+.videocon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin: 30px;
+    line-height: 150%;
+    padding: 50px;
 }
 
 .social a {
     text-decoration: none;
     color: rgb(20, 149, 255);
     font-size: 150%;
-    margin: 0 20px ;
+    margin: 0 20px;
 }
+
 .social {
     text-align: center;
 }
+
 /* pseudo selector / class */
 .social a:hover {
     color: yellow;
@@ -79,17 +211,21 @@ body{
     margin: 30px;
     line-height: 150%;
 }
-.content h3 {
-    color:crimson;
-    font-size:150%;
-}
+
 .content.about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
+    /* margin-top: 30px; */
     margin: 30px;
     line-height: 150%;
 }
+
+.content h3 {
+    color: crimson;
+    font-size: 150%;
+}
+
 /*.content h1 {
     color:darkslategray;
     text-shadow:lightpink;
@@ -98,68 +234,74 @@ body{
 .card img {
     max-width: 100%;
 }
-.card-image{
+
+.card-image {
     aspect-ratio: 4/2.5;
     overflow: hidden;
 }
-.card h1 {
-    font-family: 'Helvetica','Calibri', sans-serif;
-    font-size: 200%;
-    color:darksalmon;
-    text-shadow: darkred 2px 2px; 
-}
-.card h5 {
 
+.card h1 {
+    font-family: 'Helvetica', 'Calibri', sans-serif;
+    font-size: 200%;
+    color: darksalmon;
+    text-shadow: darkred 2px 2px;
 }
+
 .footer h4 {
-    text-align:center;
-    font-size:120%;
-    color:steelblue;
+    text-align: center;
+    font-size: 120%;
+    color: steelblue;
 }
 
 /* selector for element that has both banner and contact classes */
-.banner.contact{
+.banner.contact {
     background-image: url("graphics/mona-jain--7e7KERdgW0-unsplash.jpg")
 }
-.banner.about{
+
+.banner.about {
     background-image: url("graphics/ralph-ravi-kayden-FqqiAvJejto-unsplash.jpg")
 }
-.banner.news{
+
+.banner.news {
     background-image: url("graphics/fabrizio-chiagano-7sf1RGqn2DA-unsplash.jpg");
 }
-.content.contact{
+
+.content.contact {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
-#contact-form{
+#contact-form {
     grid-column-start: 2;
-    background-color:rgb(255, 223, 82);
+    background-color: rgb(255, 223, 82);
     padding: 30px 100px;
     border-radius: 10px;
 }
+
 /* form styles */
-#contact-form > label{
+#contact-form>label {
     display: block;
     font-weight: bold;
 }
-#contact-form > input, 
-#contact-form > select,
-#contact-form > textarea 
-{
+
+#contact-form>input,
+#contact-form>select,
+#contact-form>textarea {
     min-width: 100%;
     margin-bottom: 20px;
     padding: 10px;
     display: block;
     box-sizing: border-box;
     border-radius: 5px;
-    border:rgb(252, 164, 0) solid 1px;
+    border: rgb(252, 164, 0) solid 1px;
 }
-#contact-form > input:focus, 
-#contact-form > select:focus,
-#contact-form > textarea:focus
-{
-    outline:rgb(255, 0, 0) solid 1px;
+
+#contact-form>input:focus,
+#contact-form>select:focus,
+#contact-form>textarea:focus {
+    outline: rgb(255, 0, 0) solid 1px;
 }
-.checkbox, .radio {
+
+.checkbox,
+.radio {
     padding: 15px 0;
 }

@@ -28,11 +28,9 @@
 body {
     background-color: moccasin;
     font-family: 'Helvetica', 'Calibri', monospace;
-    margin: 0;
+    margin: 30;
     font-size: 18px;
     font-weight: 400%;
-
-
 }
 
 .banner {
@@ -163,6 +161,10 @@ section .card .image img {
     color: #6c83a2
 }
 
+.rating{
+    color:#3069af;
+}
+
 .mapcontent {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -237,13 +239,13 @@ section .card .image img {
 
 .card-image {
     aspect-ratio: 4/2.5;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .card h1 {
     font-family: 'Helvetica', 'Calibri', sans-serif;
     font-size: 200%;
-    color: darksalmon;
+    color:teal;
     text-shadow: darkred 2px 2px;
 }
 
